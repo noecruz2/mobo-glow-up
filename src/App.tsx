@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Productos from "./pages/Productos";
 import Tienda from "./pages/Tienda";
+import RecepcionProductos from "./pages/RecepcionProductos";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,7 +25,7 @@ const App = () => (
           <Route path="/generar-envio-dta" element={<Index />} />
           <Route path="/extemporaneas" element={<Index />} />
           <Route path="/status-demos" element={<Index />} />
-          <Route path="/recepcion-productos" element={<Index />} />
+          <Route path="/recepcion-productos" element={<RecepcionProductos />} />
           <Route path="/bitacora-discrepancias" element={<Index />} />
           <Route path="/historial" element={<Index />} />
           <Route path="/ayuda" element={<Index />} />
