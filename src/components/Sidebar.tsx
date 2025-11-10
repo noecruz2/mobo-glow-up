@@ -11,7 +11,10 @@ import {
   AlertCircle,
   ChevronLeft,
   ChevronRight,
-  Menu
+  Menu,
+  History,
+  HelpCircle,
+  LogOut
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -24,6 +27,11 @@ const navigation = [
   { name: "Productos", href: "/productos", icon: ShoppingCart, highlighted: true },
   { name: "Recepción de productos", href: "/recepcion-productos", icon: Package },
   { name: "Bitácora y discrepancias", href: "/bitacora-discrepancias", icon: AlertCircle },
+];
+
+const secondaryNavigation = [
+  { name: "Historial", href: "/historial", icon: History },
+  { name: "Ayuda", href: "/ayuda", icon: HelpCircle },
 ];
 
 export const Sidebar = () => {
@@ -95,6 +103,43 @@ export const Sidebar = () => {
               </NavLink>
             ))}
           </div>
+
+          {/* Divider */}
+          <div className="my-4 h-px bg-sidebar-border" />
+
+          {/* Secondary Navigation */}
+          <div className="space-y-1">
+            {secondaryNavigation.map((item) => (
+              <NavLink
+                key={item.name}
+                to={item.href}
+                className={cn(
+                  "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sidebar-foreground/80 hover:bg-sidebar-accent hover:text-sidebar-foreground transition-all duration-200",
+                  collapsed && "justify-center"
+                )}
+                activeClassName="bg-sidebar-accent text-sidebar-foreground font-medium"
+              >
+                <item.icon className="h-5 w-5 flex-shrink-0" />
+                {!collapsed && (
+                  <span className="text-sm font-medium">{item.name}</span>
+                )}
+              </NavLink>
+            ))}
+          </div>
+
+          {/* Logout Button */}
+          <button
+            onClick={() => console.log('Cerrar sesión')}
+            className={cn(
+              "w-full mt-4 flex items-center gap-3 px-3 py-2.5 rounded-lg text-sidebar-foreground/80 hover:bg-destructive hover:text-white transition-all duration-200",
+              collapsed && "justify-center"
+            )}
+          >
+            <LogOut className="h-5 w-5 flex-shrink-0" />
+            {!collapsed && (
+              <span className="text-sm font-medium">Cerrar sesión</span>
+            )}
+          </button>
         </nav>
 
         {/* Collapse Button */}
