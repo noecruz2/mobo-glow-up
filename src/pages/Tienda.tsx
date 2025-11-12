@@ -3,12 +3,12 @@ import { StatsCard } from "@/components/StatsCard";
 import { Store, CheckCircle, Users, Send, PackageCheck, AlertTriangle, PackageX } from "lucide-react";
 
 const stats = [
-  { title: "SKU's - Solicitados", value: 55, icon: CheckCircle, color: "blue" as const },
-  { title: "SKU's - Proceso", value: 1, icon: Users, color: "cyan" as const },
-  { title: "SKU's - Enviados", value: 4543, icon: Send, color: "orange" as const },
-  { title: "SKU's - Recibidos", value: 1301, icon: PackageCheck, color: "green" as const },
-  { title: "SKU's - Discrepancia", value: 1, icon: AlertTriangle, color: "red" as const },
-  { title: "SKU's - Discrepancia envío", value: 0, icon: PackageX, color: "darkred" as const },
+  { title: "SKU's - Solicitados", value: 55, icon: CheckCircle, color: "slate" as const },
+  { title: "SKU's - Proceso", value: 1, icon: Users, color: "gray" as const },
+  { title: "SKU's - Enviados", value: 4543, icon: Send, color: "blue" as const },
+  { title: "SKU's - Recibidos", value: 1301, icon: PackageCheck, color: "teal" as const },
+  { title: "SKU's - Discrepancia", value: 1, icon: AlertTriangle, color: "amber" as const },
+  { title: "SKU's - Discrepancia envío", value: 0, icon: PackageX, color: "rose" as const },
 ];
 
 const Tienda = () => {
@@ -20,12 +20,12 @@ const Tienda = () => {
         <div className="max-w-7xl mx-auto p-6 lg:p-8 space-y-6">
           {/* Store Header */}
           <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden animate-fade-in">
-            <div className="bg-secondary p-6 flex items-center gap-4">
+            <div className="bg-gradient-to-r from-primary to-primary/80 p-6 flex items-center gap-4">
               <div className="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center">
-                <Store className="h-8 w-8 text-white" />
+                <Store className="h-8 w-8 text-primary-foreground" />
               </div>
               <div className="flex-1">
-                <h1 className="text-xl font-bold text-white">Tienda</h1>
+                <h1 className="text-xl font-bold text-primary-foreground">Tienda</h1>
               </div>
             </div>
 
@@ -40,11 +40,11 @@ const Tienda = () => {
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-2 flex items-center gap-2">
-                  <Store className="h-6 w-6 text-secondary" />
+                  <Store className="h-6 w-6 text-primary" />
                   386 - Premium Outlets Querétaro
                 </h2>
                 <p className="text-muted-foreground">premoutsqro@mobo.com.mx</p>
-                <span className="inline-block mt-3 px-4 py-1.5 bg-secondary/10 text-secondary text-sm font-semibold rounded-full">
+                <span className="inline-block mt-3 px-4 py-1.5 bg-primary/10 text-primary text-sm font-semibold rounded-full">
                   TIENDA
                 </span>
               </div>
@@ -52,7 +52,7 @@ const Tienda = () => {
           </div>
 
           {/* Alert Banner */}
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl shadow-lg p-6 text-white animate-slide-up">
+          <div className="bg-gradient-to-r from-stat-amber to-stat-rose rounded-2xl shadow-lg p-6 text-white animate-slide-up">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
                 <AlertTriangle className="h-8 w-8 text-white" />

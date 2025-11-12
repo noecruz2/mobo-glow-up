@@ -5,16 +5,16 @@ interface StatsCardProps {
   title: string;
   value: number;
   icon: LucideIcon;
-  color: "blue" | "cyan" | "orange" | "green" | "red" | "darkred";
+  color: "slate" | "gray" | "blue" | "teal" | "amber" | "rose";
 }
 
 const colorVariants = {
-  blue: "bg-blue-500",
-  cyan: "bg-cyan-500",
-  orange: "bg-orange-500",
-  green: "bg-emerald-500",
-  red: "bg-red-600",
-  darkred: "bg-red-700",
+  slate: "bg-stat-slate",
+  gray: "bg-stat-gray",
+  blue: "bg-stat-blue",
+  teal: "bg-stat-teal",
+  amber: "bg-stat-amber",
+  rose: "bg-stat-rose",
 };
 
 export const StatsCard = ({ title, value, icon: Icon, color }: StatsCardProps) => {

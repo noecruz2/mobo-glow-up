@@ -108,12 +108,12 @@ const RecepcionProductos = () => {
                     <h3 className="font-semibold text-foreground">Revisa los códigos de color</h3>
                     <div className="space-y-1 mt-2">
                       <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-destructive"></div>
-                        <span className="text-sm text-muted-foreground"><span className="font-medium text-foreground">Rojo:</span> Existe discrepancia</span>
+                        <div className="w-3 h-3 rounded-full bg-stat-rose"></div>
+                        <span className="text-sm text-muted-foreground"><span className="font-medium text-foreground">Indicador 1:</span> Existe discrepancia</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <span className="text-sm text-muted-foreground"><span className="font-medium text-foreground">Amarillo:</span> Sistema no lee correctamente</span>
+                        <div className="w-3 h-3 rounded-full bg-stat-amber"></div>
+                        <span className="text-sm text-muted-foreground"><span className="font-medium text-foreground">Indicador 2:</span> Sistema no lee correctamente</span>
                       </div>
                     </div>
                   </div>
@@ -156,27 +156,27 @@ const RecepcionProductos = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="bg-card rounded-lg border border-border p-5 hover:shadow-md transition-all">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
-                  <Package className="h-5 w-5 text-secondary" />
+                <div className="w-10 h-10 rounded-lg bg-stat-slate/10 flex items-center justify-center">
+                  <Package className="h-5 w-5 text-stat-slate" />
                 </div>
                 <h3 className="font-semibold text-foreground">Traspaso y Guía</h3>
               </div>
               <p className="text-sm text-muted-foreground mb-3">Se ha asignado con éxito los traspasos con una guía a cada SKU desde el almacén. Como siguiente paso:</p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-slate mt-1.5"></div>
                   <span>Validar si el producto llegó con problemas</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-slate mt-1.5"></div>
                   <span>Marcar discrepancia por paquetería</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-slate mt-1.5"></div>
                   <span>Usar "SKU no llegó" si es necesario</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-slate mt-1.5"></div>
                   <span>Escanear producto para validar</span>
                 </li>
               </ul>
@@ -184,23 +184,23 @@ const RecepcionProductos = () => {
 
             <div className="bg-card rounded-lg border border-border p-5 hover:shadow-md transition-all">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Barcode className="h-5 w-5 text-primary" />
+                <div className="w-10 h-10 rounded-lg bg-stat-gray/10 flex items-center justify-center">
+                  <Barcode className="h-5 w-5 text-stat-gray" />
                 </div>
                 <h3 className="font-semibold text-foreground">Mercancía Escaneada</h3>
               </div>
               <p className="text-sm text-muted-foreground mb-3">Proceso después de escanear:</p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-gray mt-1.5"></div>
                   <span>Agregar piezas recibidas</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-gray mt-1.5"></div>
                   <span>Iniciar proceso de cotejo</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-gray mt-1.5"></div>
                   <span>Verificar coincidencia</span>
                 </li>
               </ul>
@@ -208,23 +208,23 @@ const RecepcionProductos = () => {
 
             <div className="bg-card rounded-lg border border-border p-5 hover:shadow-md transition-all">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                  <Package className="h-5 w-5 text-accent" />
+                <div className="w-10 h-10 rounded-lg bg-stat-teal/10 flex items-center justify-center">
+                  <Package className="h-5 w-5 text-stat-teal" />
                 </div>
                 <h3 className="font-semibold text-foreground">Mercancía Recibida</h3>
               </div>
               <p className="text-sm text-muted-foreground mb-3">Proceso completado:</p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-teal mt-1.5"></div>
                   <span>Mercancía recibida</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-teal mt-1.5"></div>
                   <span>Guía y SKU verificados</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-teal mt-1.5"></div>
                   <span>Coincidencia confirmada</span>
                 </li>
               </ul>
@@ -232,27 +232,27 @@ const RecepcionProductos = () => {
 
             <div className="bg-card rounded-lg border border-border p-5 hover:shadow-md transition-all">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
-                  <AlertTriangle className="h-5 w-5 text-destructive" />
+                <div className="w-10 h-10 rounded-lg bg-stat-rose/10 flex items-center justify-center">
+                  <AlertTriangle className="h-5 w-5 text-stat-rose" />
                 </div>
                 <h3 className="font-semibold text-foreground">Discrepancia</h3>
               </div>
               <p className="text-sm text-muted-foreground mb-3">Este estado se activa cuando:</p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-destructive mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-rose mt-1.5"></div>
                   <span>Piezas de menos/más</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-destructive mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-rose mt-1.5"></div>
                   <span>SKU no coincide</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-destructive mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-rose mt-1.5"></div>
                   <span>Problemas paquetería</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-destructive mt-1.5"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-stat-rose mt-1.5"></div>
                   <span>Daños en mercancía</span>
                 </li>
               </ul>

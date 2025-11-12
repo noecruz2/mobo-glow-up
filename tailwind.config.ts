@@ -57,21 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        blue: {
-          500: "hsl(217, 91%, 60%)",
-        },
-        cyan: {
-          500: "hsl(187, 71%, 50%)",
-        },
-        orange: {
-          500: "hsl(36, 100%, 50%)",
-        },
-        emerald: {
-          500: "hsl(160, 84%, 39%)",
-        },
-        red: {
-          600: "hsl(0, 84%, 60%)",
-          700: "hsl(0, 65%, 51%)",
+        stat: {
+          slate: "hsl(var(--stat-slate))",
+          gray: "hsl(var(--stat-gray))",
+          blue: "hsl(var(--stat-blue))",
+          teal: "hsl(var(--stat-teal))",
+          amber: "hsl(var(--stat-amber))",
+          rose: "hsl(var(--stat-rose))",
         },
       },
       backgroundImage: {

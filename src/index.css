@@ -9,47 +9,55 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 98%;
-    --foreground: 220 15% 20%;
+    --foreground: 220 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 20%;
+    --card-foreground: 220 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 20%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 208 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 215 25% 27%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 160 84% 39%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 13% 46%;
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 220 14% 96%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 160 84% 39%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 215 20% 65%;
+    --accent-foreground: 220 15% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 50% 45%;
+    --destructive-foreground: 0 0% 98%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 208 100% 50%;
+    --ring: 215 25% 27%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 20% 14%;
+    --sidebar-background: 220 18% 16%;
     --sidebar-foreground: 220 10% 85%;
-    --sidebar-primary: 208 100% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 18% 20%;
+    --sidebar-primary: 215 25% 27%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 15% 22%;
     --sidebar-accent-foreground: 220 10% 90%;
-    --sidebar-border: 220 20% 18%;
-    --sidebar-ring: 208 100% 50%;
+    --sidebar-border: 220 18% 20%;
+    --sidebar-ring: 215 25% 27%;
+
+    /* Elegant color palette for stats */
+    --stat-slate: 215 25% 27%;
+    --stat-gray: 220 13% 46%;
+    --stat-blue: 215 28% 50%;
+    --stat-teal: 180 25% 50%;
+    --stat-amber: 38 50% 50%;
+    --stat-rose: 0 50% 45%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(160 84% 39%), hsl(208 100% 50%));
-    --gradient-accent: linear-gradient(135deg, hsl(330 80% 60%), hsl(260 80% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(215 25% 27%), hsl(215 28% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(220 13% 46%), hsl(215 20% 65%));
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -72,33 +80,41 @@ All colors MUST be HSL.
     --popover: 220 20% 14%;
     --popover-foreground: 220 10% 92%;
 
-    --primary: 208 100% 55%;
+    --primary: 215 30% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 160 84% 45%;
+    --secondary: 220 15% 50%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 18% 20%;
     --muted-foreground: 220 10% 65%;
 
-    --accent: 160 84% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 215 25% 70%;
+    --accent-foreground: 220 20% 12%;
 
-    --destructive: 0 62.8% 50.6%;
+    --destructive: 0 55% 50%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 18% 24%;
     --input: 220 18% 24%;
-    --ring: 208 100% 55%;
+    --ring: 215 30% 55%;
     
     --sidebar-background: 220 22% 10%;
     --sidebar-foreground: 220 10% 85%;
-    --sidebar-primary: 208 100% 55%;
+    --sidebar-primary: 215 30% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 220 20% 16%;
     --sidebar-accent-foreground: 220 10% 90%;
     --sidebar-border: 220 20% 14%;
-    --sidebar-ring: 208 100% 55%;
+    --sidebar-ring: 215 30% 55%;
+
+    /* Elegant color palette for stats - dark mode */
+    --stat-slate: 215 30% 55%;
+    --stat-gray: 220 15% 50%;
+    --stat-blue: 215 35% 60%;
+    --stat-teal: 180 30% 55%;
+    --stat-amber: 38 55% 55%;
+    --stat-rose: 0 55% 50%;
   }
 }
 
