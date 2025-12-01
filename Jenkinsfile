@@ -22,8 +22,11 @@ pipeline {
             }
         }
 stage('Archive build') {
-    archiveArtifacts artifacts: 'dist/**'
+    steps {
+        archiveArtifacts artifacts: 'dist/**'
+    }
 }
+
 
     }
 }
