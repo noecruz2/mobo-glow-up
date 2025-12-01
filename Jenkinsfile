@@ -1,7 +1,14 @@
 pipeline {
+
     agent any
 
+    // Aquí van los triggers (fuera de stages)
+    triggers {
+        githubPush()
+    }
+
     stages {
+
         stage('Checkout') {
             steps {
                 git branch: 'main',
@@ -21,12 +28,11 @@ pipeline {
                 bat 'npm run build'
             }
         }
-stage('Archive build') {
-    steps {
-        archiveArtifacts artifacts: 'dist/**'
-    }
-}
 
-
+        stage('Archive build') {
+            steps {
+                archiveArtifacts artifacts: 'dist/**'
+            }
+        }
     }
 }
