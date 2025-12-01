@@ -1,4 +1,7 @@
-
+import { Sidebar } from "@/components/Sidebar";
+import { GuideCard } from "@/components/GuideCard";
+import { HelpSection } from "@/components/HelpSection";
+import { BookOpen } from "lucide-react";
 
 const guides = [
   { title: "Generar envío DTA" },
@@ -31,7 +34,7 @@ const Index = () => {
                 <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                   <BookOpen className="h-5 w-5 text-white" />
                 </div>
-                Biblioteca de Guias
+                Biblioteca de Guías
               </h1>
             </div>
             
