@@ -1,7 +1,4 @@
-import { Sidebar } from "@/components/Sidebar";
-import { GuideCard } from "@/components/GuideCard";
-import { HelpSection } from "@/components/HelpSection";
-import { BookOpen } from "lucide-react";
+
 
 const guides = [
   { title: "Generar envío DTA" },
