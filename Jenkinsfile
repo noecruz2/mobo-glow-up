@@ -21,11 +21,9 @@ pipeline {
                 bat 'npm run build'
             }
         }
+stage('Archive build') {
+    archiveArtifacts artifacts: 'dist/**'
+}
 
-        stage('Archive build') {
-            steps {
-                archiveArtifacts artifacts: 'build/**', fingerprint: true
-            }
-        }
     }
 }
