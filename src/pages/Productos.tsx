@@ -16,8 +16,7 @@ const Productos = () => {
               <h1 className="text-3xl font-bold text-foreground">Productos</h1>
             </div>
             <p className="text-muted-foreground">
-              Página de productos en construcción...
-            </p>
+              Página de productos en construcción...            </p>
           </div>
         </div>
       </main>
