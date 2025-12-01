@@ -34,7 +34,7 @@ const Index = () => {
                 <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                   <BookOpen className="h-5 w-5 text-white" />
                 </div>
-                Biblioteca de Gu
+                Biblioteca de Guias
               </h1>
             </div>
             
