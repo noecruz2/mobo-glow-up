@@ -5,7 +5,7 @@ import { BookOpen } from "lucide-react";
 
 const guides = [
   { title: "Generar envío DT" },
-  { title: "Tipos de devoluciones" },
+  { title: "Tipos de devoluiones" },
   { title: "Movimiento de operaciones" },
   { title: "Registro de productos" },
   { title: "Conciliación discrepancias" },
