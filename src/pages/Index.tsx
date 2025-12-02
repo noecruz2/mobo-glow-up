@@ -4,7 +4,7 @@ import { HelpSection } from "@/components/HelpSection";
 import { BookOpen } from "lucide-react";
 
 const guides = [
-  { title: "Generar envío DTA" },
+  { title: "Generar envío DT" },
   { title: "Tipos de devoluciones" },
   { title: "Movimiento de operaciones" },
   { title: "Registro de productos" },
